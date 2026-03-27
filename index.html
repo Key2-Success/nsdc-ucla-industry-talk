@@ -3,13 +3,17 @@
 <head>
     <title>NSDC UCLA Industry Talk</title>
     
-    <!-- 1. THE REDIRECT (This sends people to the Google drive video immediately) -->
-    <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1L1yY0mnz0NMay-G3j8g4fAlAb8NFHUV7/view?usp=sharing">
-
-    <!-- 2. THE THUMBNAIL (LinkedIn reads this before the redirect happens) -->
+    <!-- 1. THE THUMBNAIL (LinkedIn reads this before the redirect happens) -->
     <meta property="og:title" content="NSDC UCLA Industry Talk">
     <meta property="og:image" content="https://raw.githubusercontent.com/Key2-Success/nsdc-ucla-industry-talk/refs/heads/main/nsdc_industry_talk_thumbnail.jpg">
     <meta property="og:type" content="website">
+
+    <!-- 2. DELAYED Redirect (Wait 2 seconds) -->
+    <script type="text/javascript">
+        setTimeout(function () {
+            window.location.href = "https://drive.google.com/file/d/1L1yY0mnz0NMay-G3j8g4fAlAb8NFHUV7/view?usp=sharing";
+        }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
 </head>
 </html>
 
